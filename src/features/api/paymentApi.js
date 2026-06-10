@@ -30,14 +30,14 @@ export const paymentApi = baseApi.injectEndpoints({
       transformResponse: (response) => response.data,
     }),
 
-    // ← FIX: GET থেকে POST করা হয়েছে — cache issue সমাধান
+    // ✅ POST method is correct to avoid caching issues
     verifyAndUnlock: builder.mutation({
       query: (sessionId) => ({
         url: '/payments/verify-and-unlock',
         method: 'POST',
         body: { session_id: sessionId },
       }),
-      invalidatesTags: ['Payment', 'Listing', 'User'], // User tag add
+      invalidatesTags: ['Payment', 'Listing', 'User'], 
       transformResponse: (response) => response.data,
     }),
 
