@@ -17,8 +17,6 @@ const PricingCards = () => {
     const [buyingPackageId, setBuyingPackageId] = React.useState(null);
 
 
-    console.log('package  data:', packagesData);
-
     // Extract user data correctly from response
     const userData = currentUser?.user || currentUser;
     const isAuthenticated = userData && userData.id;
