@@ -1,15 +1,15 @@
-// src/app/store.js
+
 import { configureStore } from '@reduxjs/toolkit';
 import authReducer, { setCredentials } from './auth/authSlice';
 import productsReducer from './products/productsSlice';
 import { baseApi } from './baseApi';
-import listingFormReducer from '../features/listing/listingFormSlice'; // Only keep one
+import listingFormReducer from '../features/listing/listingFormSlice';
 
 export const store = configureStore({
   reducer: {
     auth: authReducer,
     products: productsReducer,
-    listingForm: listingFormReducer, // Remove duplicate 'listing' reducer
+    listingForm: listingFormReducer,
     [baseApi.reducerPath]: baseApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>
