@@ -1,0 +1,50 @@
+
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+    .responsiveStyle{
+        
+    }
+.responsiveStyle .secondImg{
+  top:48% !important;
+}
+.responsiveStyle .firstImg{
+    
+        right: 7px !important;
+}
+.responsiveStyle .thirdImg{
+    
+        top: 55% !important;
+        width: 42rem !important;
+        transform: rotate(18deg) !important;
+        right: 5px !important;
+}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+.responsiveStyle .secondImg{
+  top:60% !important;
+    width: 18rem !important;
+}
+.responsiveStyle .thirdImg{
+    
+        top: 66% !important;
+        width: 27.5rem !important;
+        transform: rotate(18deg) !important;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.responsiveStyle{
+    min-height: 76vh !important;
+}
+.responsiveStyle .secondImg{
+  top:55% !important;
+    width: 17rem !important;
+}
+.responsiveStyle .thirdImg{
+    
+        top: 60% !important;
+        width: 25rem !important;
+            transform: rotate(18deg) !important;
+}
+}

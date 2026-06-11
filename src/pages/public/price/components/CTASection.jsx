@@ -7,11 +7,11 @@ const CTASection = () => {
 
             {/* LEFT TOP Background Image Placeholder */}
             <div className="absolute top-0 left-0 w-[200px] md:w-[400px] opacity-60 pointer-events-none">
-                <img
+                {/* <img
                     src="/ctaLeftTop.png"
                     alt=""
                     className="w-full h-auto object-contain"
-                />
+                /> */}
             </div>
 
             {/* RIGHT BOTTOM Background Image Placeholder */}
