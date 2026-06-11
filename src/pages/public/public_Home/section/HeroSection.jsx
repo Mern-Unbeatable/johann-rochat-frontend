@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="relative responsiveStyle flex min-h-[50vh] w-full flex-col items-center justify-start overflow-hidden bg-[#FFFCF6] md:min-h-[50vh] lg:min-h-[85vh] xl:min-h-[120vh] 2xl:min-h-230">
       <div
-        className="pointer-events-none absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        className="pointer-events-none absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-[#FFFCF6]"
       // style={{ backgroundImage: "url('/main-hero-screen.jpg')" }}
       />
 
