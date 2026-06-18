@@ -61,29 +61,28 @@ const HeroSection = () => {
             <ArrowRight className="ml-1 h-5 w-5" />
           </Link>
         </div>
-      </div>
-
-      {/* Steps Indicator Section at the bottom */}
+        </div>
+            {/* Steps Indicator Section at the bottom */}
       <div className="relative z-10 mt-16 w-full px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-6 md:mt-20 lg:mt-24">
         <div className="flex flex-col items-center justify-center gap-0 md:flex-row md:items-start md:gap-4 lg:gap-6 xl:gap-8">
           {/* Step 1 */}
           <div className="relative flex max-w-[280px] flex-1 items-start gap-4 pb-8 md:pb-0">
-            <div className="relative z-10 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full border border-gray-100 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#EBF2F0]">
-                <Home className="h-5 w-5 text-[#3D7A6D]" />
+            <div className="relative z-10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border border-gray-100/40 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#EDECE3]">
+                <Home className="h-4 w-4 text-[#3D7A6D]" />
               </div>
             </div>
             {/* Vertical connector for mobile */}
-            <div className="absolute top-[56px] bottom-0 left-[27px] w-0 border-l-2 border-dotted border-[#3D7A6D]/60 md:hidden"></div>
+            <div className="absolute top-[48px] bottom-0 left-[23px] w-0 border-l-2 border-dotted border-[#3D7A6D]/60 md:hidden"></div>
 
             <div className="flex flex-col pt-1">
               <div className="text-xl font-bold tracking-wider text-[#3D7A6D] uppercase md:text-sm lg:text-sm xl:text-base 2xl:text-xl">
                 01
               </div>
-              <h4 className="mt-0.5 text-lg leading-tight font-bold text-[#1A2E2A] md:text-xs lg:text-xs xl:text-sm 2xl:text-lg">
+              <h4 className="mt-0.5 text-lg leading-tight font-bold text-[#1A2E2A] md:text-xs lg:text-sm xl:text-sm 2xl:text-lg">
                 Données du bien
               </h4>
-              <p className="mt-1 text-base leading-normal text-gray-500 md:text-[11px] lg:text-[11px] xl:text-[13px] 2xl:text-base">
+              <p className="mt-1 text-base leading-normal text-gray-500 md:text-[11px] lg:text-[13px] xl:text-[13px] 2xl:text-base">
                 Ajoutez les informations essentielles de votre bien.
               </p>
             </div>
@@ -96,22 +95,22 @@ const HeroSection = () => {
 
           {/* Step 2 */}
           <div className="relative flex max-w-[280px] flex-1 items-start gap-4 pb-8 md:pb-0">
-            <div className="relative z-10 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full border border-gray-100 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#EBF2F0]">
-                <Sparkles className="h-5 w-5 text-[#3D7A6D]" />
+            <div className="relative z-10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border border-gray-100/40 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#EDECE3]">
+                <Sparkles className="h-4 w-4 text-[#3D7A6D]" />
               </div>
             </div>
             {/* Vertical connector for mobile */}
-            <div className="absolute top-[56px] bottom-0 left-[27px] w-0 border-l-2 border-dotted border-[#3D7A6D]/60 md:hidden"></div>
+            <div className="absolute top-[48px] bottom-0 left-[23px] w-0 border-l-2 border-dotted border-[#3D7A6D]/60 md:hidden"></div>
 
             <div className="flex flex-col pt-1">
               <div className="text-xl font-bold tracking-wider text-[#3D7A6D] uppercase md:text-sm lg:text-sm xl:text-base 2xl:text-xl">
                 02
               </div>
-              <h4 className="mt-0.5 text-lg leading-tight font-bold text-[#1A2E2A] md:text-xs lg:text-xs xl:text-sm 2xl:text-lg">
+              <h4 className="mt-0.5 text-lg leading-tight font-bold text-[#1A2E2A] md:text-xs lg:text-sm xl:text-sm 2xl:text-lg">
                 IA générée
               </h4>
-              <p className="mt-1 text-base leading-normal text-gray-500 md:text-[11px] lg:text-[11px] xl:text-[13px] 2xl:text-base">
+              <p className="mt-1 text-base leading-normal text-gray-500 md:text-[11px] lg:text-[13px] xl:text-[13px] 2xl:text-base">
                 Notre IA rédige une annonce claire, complète et optimisée.
               </p>
             </div>
@@ -124,16 +123,16 @@ const HeroSection = () => {
 
           {/* Step 3 */}
           <div className="relative flex max-w-[280px] flex-1 items-start gap-4">
-            <div className="relative z-10 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full border border-gray-100 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#EBF2F0]">
-                <FileText className="h-5 w-5 text-[#3D7A6D]" />
+            <div className="relative z-10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border border-gray-100/40 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#EDECE3]">
+                <FileText className="h-4 w-4 text-[#3D7A6D]" />
               </div>
             </div>
             <div className="flex flex-col pt-1">
               <div className="text-xl font-bold tracking-wider text-[#3D7A6D] uppercase md:text-sm lg:text-sm xl:text-base 2xl:text-xl">
                 03
               </div>
-              <h4 className="mt-0.5 text-lg leading-tight font-bold text-[#1A2E2A] md:text-xs lg:text-xs xl:text-sm 2xl:text-lg">
+              <h4 className="mt-0.5 text-lg leading-tight font-bold text-[#1A2E2A] md:text-xs lg:text-sm xl:text-sm 2xl:text-lg">
                 Annonce prête à publier
               </h4>
               <p className="mt-1 text-base leading-normal text-gray-500 md:text-[11px] lg:text-[11px] xl:text-[13px] 2xl:text-base">
