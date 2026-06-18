@@ -11,7 +11,7 @@ const HeroSection = () => {
         <img
           src="/leftside.png"
           alt=""
-          className="pointer-events-none absolute bottom-0 left-0 hidden h-[85%] md:h-[90%] max-w-[25%] md:max-w-[20%] lg:max-w-[18%] object-contain object-left-bottom opacity-70 select-none lg:block"
+          className="pointer-events-none absolute bottom-0 left-0 hidden h-[85%] max-w-[25%] object-contain object-left-bottom opacity-70 select-none md:h-[90%] md:max-w-[20%] lg:block lg:max-w-[18%]"
         />
         {/* Right Soft Cream Gradient Graphic */}
         <img
@@ -61,19 +61,25 @@ const HeroSection = () => {
             <ArrowRight className="ml-1 h-5 w-5" />
           </Link>
         </div>
-        </div>
-            {/* Steps Indicator Section at the bottom */}
-      <div className="relative z-10 mt-16 w-full px-6 md:px-12 lg:px-16 xl:px-20 2xl:px-6 md:mt-20 lg:mt-24">
+      </div>
+      {/* Steps Indicator Section at the bottom */}
+      <div className="relative z-10 mt-16 w-full px-6 md:mt-20 md:px-12 lg:mt-24 lg:px-16 xl:px-20 2xl:px-6">
         <div className="flex flex-col items-center justify-center gap-0 md:flex-row md:items-start md:gap-4 lg:gap-6 xl:gap-8">
           {/* Step 1 */}
           <div className="relative flex max-w-[280px] flex-1 items-start gap-4 pb-8 md:pb-0">
-            <div className="relative z-10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border border-gray-100/40 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#EDECE3]">
-                <Home className="h-4 w-4 text-[#3D7A6D]" />
+            <div className="relative z-10 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full border border-gray-100/40 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#EDECE3]">
+                <Home className="h-7 w-7 text-[#3D7A6D]" />
               </div>
             </div>
             {/* Vertical connector for mobile */}
-            <div className="absolute top-[48px] bottom-0 left-[23px] w-0 border-l-2 border-dotted border-[#3D7A6D]/60 md:hidden"></div>
+            <div className="absolute top-[68px] bottom-[4px] left-[29px] flex flex-col justify-between items-center w-1.5 md:hidden">
+              <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+              <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+              <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+              <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+              <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+            </div>
 
             <div className="flex flex-col pt-1">
               <div className="text-xl font-bold tracking-wider text-[#3D7A6D] uppercase md:text-sm lg:text-sm xl:text-base 2xl:text-xl">
@@ -89,19 +95,30 @@ const HeroSection = () => {
           </div>
 
           {/* Dotted Divider 1 */}
-          <div className="hidden items-center justify-center self-center px-2 text-lg font-bold tracking-widest text-[#3D7A6D] opacity-40 lg:px-4 xl:hidden 2xl:flex">
-            ••••••
+          <div className="hidden xl:flex items-center gap-2 self-start mt-[38px] px-2 lg:px-4">
+            <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+            <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+            <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+            <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+            <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+            <div className="h-2.5 w-2.5 rounded-full bg-[#3D7A6D]" />
           </div>
 
           {/* Step 2 */}
           <div className="relative flex max-w-[280px] flex-1 items-start gap-4 pb-8 md:pb-0">
-            <div className="relative z-10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border border-gray-100/40 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#EDECE3]">
-                <Sparkles className="h-4 w-4 text-[#3D7A6D]" />
+            <div className="relative z-10 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full border border-gray-100/40 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#EDECE3]">
+                <Sparkles className="h-7 w-7 text-[#3D7A6D]" />
               </div>
             </div>
             {/* Vertical connector for mobile */}
-            <div className="absolute top-[48px] bottom-0 left-[23px] w-0 border-l-2 border-dotted border-[#3D7A6D]/60 md:hidden"></div>
+            <div className="absolute top-[68px] bottom-[4px] left-[29px] flex flex-col justify-between items-center w-1.5 md:hidden">
+              <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+              <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+              <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+              <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+              <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+            </div>
 
             <div className="flex flex-col pt-1">
               <div className="text-xl font-bold tracking-wider text-[#3D7A6D] uppercase md:text-sm lg:text-sm xl:text-base 2xl:text-xl">
@@ -117,15 +134,20 @@ const HeroSection = () => {
           </div>
 
           {/* Dotted Divider 2 */}
-          <div className="hidden items-center justify-center self-center px-2 text-lg font-bold tracking-widest text-[#3D7A6D] opacity-40 lg:px-4 xl:hidden 2xl:flex">
-            ••••••
+          <div className="hidden xl:flex items-center gap-2 self-start mt-[38px] px-2 lg:px-4">
+            <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+            <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+            <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+            <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+            <div className="h-1.5 w-1.5 rounded-full bg-[#3D7A6D]" />
+            <div className="h-2.5 w-2.5 rounded-full bg-[#3D7A6D]" />
           </div>
 
           {/* Step 3 */}
           <div className="relative flex max-w-[280px] flex-1 items-start gap-4">
-            <div className="relative z-10 flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border border-gray-100/40 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#EDECE3]">
-                <FileText className="h-4 w-4 text-[#3D7A6D]" />
+            <div className="relative z-10 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full border border-gray-100/40 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#EDECE3]">
+                <FileText className="h-7 w-7 text-[#3D7A6D]" />
               </div>
             </div>
             <div className="flex flex-col pt-1">
