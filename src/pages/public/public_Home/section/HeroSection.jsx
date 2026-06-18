@@ -11,7 +11,7 @@ const HeroSection = () => {
         <img
           src="/leftside.png"
           alt=""
-          className="absolute left-0 top-0 h-full object-contain object-left select-none max-w-[35%] md:max-w-[25%] lg:max-w-[20%]"
+          className="hidden md:block absolute left-0 top-0 h-full object-contain object-left select-none max-w-[35%] md:max-w-[25%] lg:max-w-[20%]"
         />
         {/* Right Soft Cream Gradient Graphic */}
         <img
@@ -58,15 +58,18 @@ const HeroSection = () => {
 
       {/* Steps Indicator Section at the bottom */}
       <div className="relative z-10 w-full max-w-5xl px-6 mt-16 md:mt-24 lg:mt-32">
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-4 lg:gap-8">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-0 md:gap-4 lg:gap-8">
           {/* Step 1 */}
-          <div className="flex items-center gap-4 flex-1 max-w-[280px]">
-            <div className="flex-shrink-0 w-14 h-14 rounded-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 flex items-center justify-center">
+          <div className="relative flex items-start gap-4 flex-1 max-w-[280px] pb-8 md:pb-0">
+            <div className="relative z-10 flex-shrink-0 w-14 h-14 rounded-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 flex items-center justify-center">
               <div className="w-10 h-10 rounded-full bg-[#EBF2F0] flex items-center justify-center">
                 <Home className="w-5 h-5 text-[#3D7A6D]" />
               </div>
             </div>
-            <div className="flex flex-col">
+            {/* Vertical connector for mobile */}
+            <div className="absolute left-[27px] top-[56px] bottom-0 w-0 border-l-2 border-dotted border-[#3D7A6D]/60 md:hidden"></div>
+            
+            <div className="flex flex-col pt-1">
               <div className="text-[11px] font-bold text-[#3D7A6D] tracking-wider uppercase">01</div>
               <h4 className="text-sm font-bold text-[#1A2E2A] leading-tight mt-0.5">Données du bien</h4>
               <p className="text-[11px] text-gray-500 mt-1 leading-normal">
@@ -81,13 +84,16 @@ const HeroSection = () => {
           </div>
 
           {/* Step 2 */}
-          <div className="flex items-center gap-4 flex-1 max-w-[280px]">
-            <div className="flex-shrink-0 w-14 h-14 rounded-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 flex items-center justify-center">
+          <div className="relative flex items-start gap-4 flex-1 max-w-[280px] pb-8 md:pb-0">
+            <div className="relative z-10 flex-shrink-0 w-14 h-14 rounded-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 flex items-center justify-center">
               <div className="w-10 h-10 rounded-full bg-[#EBF2F0] flex items-center justify-center">
                 <Sparkles className="w-5 h-5 text-[#3D7A6D]" />
               </div>
             </div>
-            <div className="flex flex-col">
+            {/* Vertical connector for mobile */}
+            <div className="absolute left-[27px] top-[56px] bottom-0 w-0 border-l-2 border-dotted border-[#3D7A6D]/60 md:hidden"></div>
+
+            <div className="flex flex-col pt-1">
               <div className="text-[11px] font-bold text-[#3D7A6D] tracking-wider uppercase">02</div>
               <h4 className="text-sm font-bold text-[#1A2E2A] leading-tight mt-0.5">IA générée</h4>
               <p className="text-[11px] text-gray-500 mt-1 leading-normal">
@@ -102,13 +108,13 @@ const HeroSection = () => {
           </div>
 
           {/* Step 3 */}
-          <div className="flex items-center gap-4 flex-1 max-w-[280px]">
-            <div className="flex-shrink-0 w-14 h-14 rounded-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 flex items-center justify-center">
+          <div className="relative flex items-start gap-4 flex-1 max-w-[280px]">
+            <div className="relative z-10 flex-shrink-0 w-14 h-14 rounded-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 flex items-center justify-center">
               <div className="w-10 h-10 rounded-full bg-[#EBF2F0] flex items-center justify-center">
                 <FileText className="w-5 h-5 text-[#3D7A6D]" />
               </div>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col pt-1">
               <div className="text-[11px] font-bold text-[#3D7A6D] tracking-wider uppercase">03</div>
               <h4 className="text-sm font-bold text-[#1A2E2A] leading-tight mt-0.5">Annonce prête à publier</h4>
               <p className="text-[11px] text-gray-500 mt-1 leading-normal">
