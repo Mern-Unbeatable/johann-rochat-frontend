@@ -1,71 +1,121 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
-import './Hero.css'
+import { Home, Sparkles, FileText, ArrowRight } from 'lucide-react';
+
 const HeroSection = () => {
   return (
-    <section className="relative responsiveStyle flex min-h-[50vh] w-full flex-col items-center justify-start overflow-hidden bg-[#FFFCF6] md:min-h-[50vh] lg:min-h-[85vh] xl:min-h-[120vh] 2xl:min-h-230">
-      <div
-        className="pointer-events-none absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-[#FFFCF6]"
-      // style={{ backgroundImage: "url('/main-hero-screen.jpg')" }}
-      />
-
-      {/* --- Floating Individual Images Layer --- */}
-      <div className="pointer-events-none absolute inset-0 z-0 mx-auto w-full max-w-7xl">
-        {/* Image 1: Moved to Top Right (AI Description Card) */}
+    <section className="relative flex min-h-[90vh] lg:min-h-[95vh] w-full flex-col items-center justify-between overflow-hidden bg-[#FFFCF6] py-16 md:py-20 lg:py-24">
+      {/* Background Graphic Lines */}
+      <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+        {/* Left Green Wavy Graphic */}
         <img
-          src="/hero-1.png"
-          alt="Image 1"
-          className="firstImg hidden md:block absolute top-[12%] right-[-5%] w-60 transform md:top-[16%] md:right-[2%] md:w-50 lg:top-[14%] lg:right-[4%] lg:w-62 xl:top-[15%] xl:right-[8%] xl:w-73 2xl:right-[-16%] 2xl:w-120"
+          src="/leftside.png"
+          alt=""
+          className="absolute left-0 top-0 h-full object-contain object-left select-none max-w-[35%] md:max-w-[25%] lg:max-w-[20%]"
         />
-
-        {/* Image 2: Middle/Bottom Left (Appartement Card) */}
+        {/* Right Soft Cream Gradient Graphic */}
         <img
-          src="/hero-2.png"
-          alt="Image 2"
-          className=" secondImg absolute top-[60%] left-[1%] w-30 transform md:top-[40%] md:left-[1%] md:w-58 lg:top-[43%] lg:left-[1%] lg:w-65 xl:top-[32%] xl:left-[2%] xl:w-115 2xl:top-[10%] 2xl:left-[-18%] 2xl:w-165"
-        />
-
-        {/* Image 3: Bottom Right (Building Card) */}
-        <img
-          src="/hero-3.png"
-          alt="Image 3"
-          className="thirdImg absolute top-[62%] right-[1%] w-48 rotate-20 transform md:top-[65%] md:right-[3%] md:w-68 md:-rotate-8 lg:top-[66%] lg:right-[5%] lg:w-80 xl:top-[64%] xl:right-[8%] xl:w-110 2xl:top-[55%] 2xl:right-[-15%] 2xl:w-200 2xl:-rotate-4"
+          src="/right.png"
+          alt=""
+          className="absolute right-0 top-0 h-full object-contain object-right select-none max-w-[45%] md:max-w-[35%] lg:max-w-[30%]"
         />
       </div>
 
-      {/* --- Main Content Layer --- */}
-      <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center px-1 pt-10 text-[10px] text-center md:pt-14 lg:pt-28 xl:pt-32">
+      {/* Main Content Layer */}
+      <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center px-6 text-center mt-4 md:mt-8 lg:mt-12">
         {/* Sub-badge */}
-        <div className="mb-6 flex items-center  space-x-2 rounded-full border border-[#3D7A6D]/20 bg-[#F0F2F1]/90 px-4 py-1.5 backdrop-blur-sm md:py-1.75 lg:py-2 xl:py-2">
-          <div className="h-2 w-2 rounded-full bg-[#3D7A6D]"></div>
-          <span className="font-poppins text-[9px] font-semibold tracking-wide text-[#3D7A6D] uppercase md:text-[11px] lg:text-xs">
-            Des publicités professionnelles, sans être un pro
+        <div className="mb-6 flex items-center space-x-2.5 rounded-full border border-[#3D7A6D]/20 bg-white/80 px-5 py-2 shadow-sm backdrop-blur-sm">
+          <div className="h-2.5 w-2.5 rounded-full bg-[#3D7A6D]"></div>
+          <span className="font-poppins text-[11px] md:text-[13px] font-medium tracking-wide text-[#3D7A6D]">
+            Des publicités professionnelles, sans être un pro.
           </span>
         </div>
 
         {/* Main Title */}
-        <h1 className="text-center text-[15px] leading-[1.2] font-[600] tracking-tight text-[#2D3748] md:text-[25px] lg:text-[40px] lg:leading-[1.15] xl:text-5xl xl:leading-[1.1] 2xl:text-6xl">
-          Créez votre annonce <br className="hidden md:block" />
-          immobilière en quelques <br className="hidden md:block" />
+        <h1 className="text-center font-poppins text-3xl font-bold leading-[1.2] tracking-tight text-[#1A2E2A] sm:text-4xl md:text-5xl lg:text-[54px] lg:leading-[1.15]">
+          Créez votre annonce <br />
+          immobilière en quelques <br />
           minutes seulement
         </h1>
 
         {/* Subtitle */}
-        <p className="font-poppins mt-2 max-w-md px-2 text-[12px] leading-relaxed text-[#5C667B] md:text-[15px] lg:max-w-xl lg:text-base xl:text-lg 2xl:text-xl">
-          Annonces claires, professionnelles et efficaces, propulsées par l’IA et l’expertise d’un
-          agent immobilier avec brevet fédéral en Suisse
+        <p className="font-poppins mt-5 max-w-2xl px-2 text-sm leading-relaxed text-[#5C667B] md:text-base lg:text-lg">
+          Annonces claires, professionnelles et efficaces, alimentée par l'IA et <br className="hidden md:inline" />
+          l'expertise d'un agent immobilier avec brevet fédéral en Suisse
         </p>
 
         {/* CTA Button */}
-        <div className="mt-3 mb-24 md:mt-9 md:mb-10 lg:mt-10 lg:mb-8 xl:mb-0">
+        <div className="mt-8">
           <Link
             to="/creer-annonce"
-            className="font-poppins inline-flex items-center space-x-2 rounded-lg bg-[#3D7A6D] px-2 py-2 text-[12px] font-semibold text-white shadow-md transition-all hover:bg-[#34695e] active:scale-95 md:px-9 md:py-2 md:text-sm lg:px-10 lg:py-4 lg:text-lg xl:px-10 xl:py-4 xl:text-lg"
+            className="font-poppins inline-flex items-center space-x-2 rounded-lg bg-[#3D7A6D] px-8 py-3.5 text-base font-semibold text-white shadow-lg transition-all hover:bg-[#34695e] hover:shadow-xl active:scale-95"
           >
             <span>Créer mon annonce</span>
-            {/* <ArrowRight className="h-5 w-5 ml-1" /> */}
+            <ArrowRight className="h-5 w-5 ml-1" />
           </Link>
+        </div>
+      </div>
+
+      {/* Steps Indicator Section at the bottom */}
+      <div className="relative z-10 w-full max-w-5xl px-6 mt-16 md:mt-24 lg:mt-32">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-4 lg:gap-8">
+          {/* Step 1 */}
+          <div className="flex items-center gap-4 flex-1 max-w-[280px]">
+            <div className="flex-shrink-0 w-14 h-14 rounded-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-[#EBF2F0] flex items-center justify-center">
+                <Home className="w-5 h-5 text-[#3D7A6D]" />
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <div className="text-[11px] font-bold text-[#3D7A6D] tracking-wider uppercase">01</div>
+              <h4 className="text-sm font-bold text-[#1A2E2A] leading-tight mt-0.5">Données du bien</h4>
+              <p className="text-[11px] text-gray-500 mt-1 leading-normal">
+                Ajoutez les informations essentielles de votre bien.
+              </p>
+            </div>
+          </div>
+
+          {/* Dotted Divider 1 */}
+          <div className="hidden md:flex items-center justify-center self-center text-[#3D7A6D] opacity-40 font-bold tracking-widest text-lg px-2 lg:px-4">
+            ••••••
+          </div>
+
+          {/* Step 2 */}
+          <div className="flex items-center gap-4 flex-1 max-w-[280px]">
+            <div className="flex-shrink-0 w-14 h-14 rounded-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-[#EBF2F0] flex items-center justify-center">
+                <Sparkles className="w-5 h-5 text-[#3D7A6D]" />
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <div className="text-[11px] font-bold text-[#3D7A6D] tracking-wider uppercase">02</div>
+              <h4 className="text-sm font-bold text-[#1A2E2A] leading-tight mt-0.5">IA générée</h4>
+              <p className="text-[11px] text-gray-500 mt-1 leading-normal">
+                Notre IA rédige une annonce claire, complète et optimisée.
+              </p>
+            </div>
+          </div>
+
+          {/* Dotted Divider 2 */}
+          <div className="hidden md:flex items-center justify-center self-center text-[#3D7A6D] opacity-40 font-bold tracking-widest text-lg px-2 lg:px-4">
+            ••••••
+          </div>
+
+          {/* Step 3 */}
+          <div className="flex items-center gap-4 flex-1 max-w-[280px]">
+            <div className="flex-shrink-0 w-14 h-14 rounded-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-[#EBF2F0] flex items-center justify-center">
+                <FileText className="w-5 h-5 text-[#3D7A6D]" />
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <div className="text-[11px] font-bold text-[#3D7A6D] tracking-wider uppercase">03</div>
+              <h4 className="text-sm font-bold text-[#1A2E2A] leading-tight mt-0.5">Annonce prête à publier</h4>
+              <p className="text-[11px] text-gray-500 mt-1 leading-normal">
+                Recevez une annonce professionnelle, prête à être publiée en un clic.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
