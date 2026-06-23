@@ -4,7 +4,7 @@ import CTASection from '../price/components/CTASection';
 
 const HowItWorks = () => {
   return (
-    <div className="bg-[#FAF9F7]">
+    <div className="bg-[#FFFCF6]">
       <header className="mx-auto flex h-auto min-h-100 max-w-7xl flex-col items-center justify-center px-6 py-12 text-center md:min-h-[125 md:py-0">
         {/*  Sub-badge */}
         <div className="mb-6 flex items-center space-x-2 rounded-sm border border-[#3D7A6D]/10 bg-[#E9E9E9] px-4 py-1.5">

@@ -3,7 +3,7 @@ import { ShieldCheck, Mail, Building2, Zap, Server, Copyright, AlertCircle } fro
 
 const LegalNotice = () => {
   return (
-    <div className="min-h-screen bg-[#FAF9F7] px-4 py-8 font-sans text-gray-800 md:py-16">
+    <div className="min-h-screen bg-[#FFFCF6] px-4 py-8 font-sans text-gray-800 md:py-16">
       <div className="mx-auto max-w-6xl">
         {/* Header */}
         <header className="mb-6">
