@@ -125,7 +125,7 @@ const HeroSection = () => {
                 02
               </div>
               <h4 className="mt-0.5 text-lg leading-tight font-bold text-[#1A2E2A] md:text-xs lg:text-sm xl:text-sm 2xl:text-lg">
-                IA généré
+                IA génère
               </h4>
               <p className="mt-1 text-base leading-normal text-gray-500 md:text-[11px] lg:text-[13px] xl:text-[13px] 2xl:text-base">
                 Notre IA rédige une annonce claire, complète et optimisée.
