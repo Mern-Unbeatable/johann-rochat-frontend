@@ -41,7 +41,7 @@ const HowItWorksSection = () => {
     ];
 
     return (
-        <div className="bg-[#FFFCF6] py-12 md:py-20   overflow-hidden">
+        <div className="bg-[#FAF9F7] py-12 md:py-20   overflow-hidden">
             <div className=" relative container mx-auto max-w-7xl px-4 lg:px-12">
                 
                 {/* SVG Connection Curves - Sudhu Desktop/Laptop (lg) e dekhabe */}
